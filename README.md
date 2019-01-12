@@ -52,4 +52,20 @@ npm install -g webpack
 npm install -g nodemon
 npm install
 ```
+## API routes 
+
+Select single Item 
+ Route: GET /items/:id
+ 
+Update single item 
+ route : PUT /items/:id
+
+Get related items 
+  Route: GET /items/:id/related
+
+Delete item 
+  Route: DELETE /items/:id
+
+Add new item
+ route : POST /items/:id
 
