@@ -34,7 +34,7 @@ const RelatedItemView = function(props) {
     <RelatedItemDiv>
       <div style={{height: '145px', width: '180px', paddingBottom: '10px'}}>
       <buttons.StyledLink>
-        <img src={props.relatedItem.imgUrl} style={{height: '135px'}}></img>
+        <img src={props.relatedItem.imgurl} style={{height: '135px'}}></img>
         <br></br>
         {props.relatedItem.name}
       </buttons.StyledLink>

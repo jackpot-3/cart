@@ -72,7 +72,7 @@ class Checkout extends React.Component {
 
   componentDidMount() {
     $.ajax({
-      url: `http://localhost:3002/items/${window.location.href.split('/')[3]}`,
+      url: `http://localhost:3004/items/${window.location.href.split('/')[3]}`,
       method: 'GET',
       contentType: 'application/json',
       success: (results) => {
@@ -80,7 +80,7 @@ class Checkout extends React.Component {
           item: results[0]
         }, () => {
           $.ajax({
-            url: `http://localhost:3002/items/${this.state.item.item_id}/related`,
+            url: `http://localhost:3004/items/${this.state.item.item_id}/related`,
             method: 'GET',
             contentType: 'application/json',
             success: (results) => {
