@@ -1,7 +1,13 @@
-const app = require('./index.js');
-const port = 3002;
+require('newrelic');
+const Promise = require('bluebird');
+Promise.promisifyAll(require('redis'));
+// const app = require('./indexMysql.js');
+const app = require('./indexCassandra.js');
+// const app = require('./indexPostgres.js');
 
-app.listen(port, (err) => {
+const port = 3004;
+
+app.listen(port, err => {
   if (err) {
     console.error(err);
   } else {
